@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Infinit Frame</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="nature.html">Nature</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="portraits.html">Portraits</a>
+            <a href="abstract.html">Abstract</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidenav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
+        <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <h1>Forest Gallery</h1>
+    <div class="gallery">
+        <!-- Forest Image 1 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg" alt="Forest 1">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Misty Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 2 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg" alt="Forest 2">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Sunlit Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 3 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" alt="Forest 3">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Dense Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 4 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Forest 4">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Snowy Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 5 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/15286/pexels-photo.jpg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg" alt="Forest 5">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Mossy Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 6 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg" alt="Forest 6">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Autumn Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 7 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg" alt="Forest 7">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Foggy Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 8 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/327482/pexels-photo-327482.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/327482/pexels-photo-327482.jpeg" alt="Forest 8">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Pine Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 9 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg" alt="Forest 9">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Green Forest</h3>
+            </div>
+        </div>
+
+        <!-- Forest Image 10 -->
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt="Forest 10">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Red Forest</h3>
+            </div>
+        </div>
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg" alt="Forest 11">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Enchanting Woods</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/1114890/pexels-photo-1114890.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/1114890/pexels-photo-1114890.jpeg" alt="Forest 12">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Golden Autumn</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Forest 13">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Misty Morning</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" alt="Forest 14">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Sunlit Grove</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/109877/pexels-photo-109877.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/109877/pexels-photo-109877.jpeg" alt="Forest 15">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Lush Greenery</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/235725/pexels-photo-235725.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/235725/pexels-photo-235725.jpeg" alt="Forest 16">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Tranquil Path</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg" alt="Forest 17">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Deep Forest</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg" alt="Forest 18">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Silent Woods</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Forest 19">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Pathway Through Trees</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg" alt="Forest 20">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Misty Path</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/25284/pexels-photo-25284.jpg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg" alt="Forest 21">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Evergreen Beauty</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/322415/pexels-photo-322415.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/30733468/pexels-photo-30733468/free-photo-of-lush-forest-trail-with-sunlit-foliage.jpeg" alt="Forest 22">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Woodland Walk</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt="Forest 23">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Red Autumn Leaves</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="openLightbox('https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg')">
+        <div class="card-image">
+            <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg" alt="Forest 24">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Mystical Woods</h3>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <script>
+        // JavaScript for Side Navigation
+        function toggleSidenav() {
+            const sidenav = document.getElementById('sidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // JavaScript for Lightbox
+        let currentImageIndex = 0;
+        const images = [
+            'https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg',
+            'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg',
+            'https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg',
+            'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg',
+            'https://images.pexels.com/photos/15286/pexels-photo.jpg',
+            'https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg',
+            'https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg',
+            'https://images.pexels.com/photos/327482/pexels-photo-327482.jpeg',
+            'https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg',
+            'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg'
+            'https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg',
+    'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg',
+    'https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg',
+    'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg',
+    'https://images.pexels.com/photos/15286/pexels-photo.jpg',
+    'https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg',
+    'https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg',
+    'https://images.pexels.com/photos/327482/pexels-photo-327482.jpeg',
+    'https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg',
+    'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg',
+    'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg',
+    'https://images.pexels.com/photos/1114890/pexels-photo-1114890.jpeg',
+    'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg',
+    'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg',
+    'https://images.pexels.com/photos/109877/pexels-photo-109877.jpeg'
+            // Add more image URLs here
+        ];
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = src;
+            currentImageIndex = images.indexOf(src);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            currentImageIndex += n;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

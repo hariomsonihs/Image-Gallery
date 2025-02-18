@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Infinit Frame</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="nature.html">Nature</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="portraits.html">Portraits</a>
+            <a href="abstract.html">Abstract</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidenav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <h1>Forest Gallery</h1>
+    <div class="gallery">
+        <div class="gallery">
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg" alt="Mountain 1">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Golden Hour Mountain</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Mountain 2">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Snowy Peak</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Mountain 3">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Sunset Over Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" alt="Mountain 4">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Misty Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg" alt="Mountain 5">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Green Valley Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/2386310/pexels-photo-2386310.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/2386310/pexels-photo-2386310.jpeg" alt="Mountain 6">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Rocky Peaks</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg" alt="Mountain 7">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Foggy Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg" alt="Mountain 8">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Snow-Capped Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/3224164/pexels-photo-3224164.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/3224164/pexels-photo-3224164.jpeg" alt="Mountain 9">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Sunrise Over Peaks</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/358482/pexels-photo-358482.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/358482/pexels-photo-358482.jpeg" alt="Mountain 10">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Reflection</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg" alt="Mountain 11">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Autumn Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg" alt="Mountain 12">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Layered Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg" alt="Mountain 13">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Cloudy Peaks</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Mountain 14">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Lake</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg" alt="Mountain 15">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Foggy Forest Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg" alt="Mountain 16">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Range</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg" alt="Mountain 17">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Sunset Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/753772/pexels-photo-753772.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/753772/pexels-photo-753772.jpeg" alt="Mountain 18">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Snowy Mountain Lake</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg" alt="Mountain 19">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Valley</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg" alt="Mountain 20">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Sunlit Mountains</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg" alt="Mountain 21">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Reflection in Lake</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg" alt="Mountain 22">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Stream</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg" alt="Mountain 23">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Meadow</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg" alt="Mountain 24">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Sunset</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg" alt="Mountain 25">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Cliff</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg" alt="Mountain 26">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Path</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/158385/pexels-photo-158385.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/158385/pexels-photo-158385.jpeg" alt="Mountain 27">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Mountain Waterfall</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg" alt="Mountain 28">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Golden Hour Mountain</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Mountain 29">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Snowy Peak</h3>
+    </div>
+</div>
+
+<div class="card" onclick="openLightbox('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg')">
+    <div class="card-image">
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Mountain 30">
+    </div>
+    <div class="card-content">
+        <h3 class="card-title">Sunset Over Mountains</h3>
+    </div>
+</div>
+</div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <script>
+        // JavaScript for Side Navigation
+        function toggleSidenav() {
+            const sidenav = document.getElementById('sidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // JavaScript for Lightbox
+        let currentImageIndex = 0;
+        const images = [
+            'https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg',
+    'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg',
+    'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg',
+    'https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg',
+    'https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg',
+    'https://images.pexels.com/photos/2386310/pexels-photo-2386310.jpeg',
+    'https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg',
+    'https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg',
+    'https://images.pexels.com/photos/3224164/pexels-photo-3224164.jpeg',
+    'https://images.pexels.com/photos/358482/pexels-photo-358482.jpeg',
+    'https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg',
+    'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg',
+    'https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg',
+    'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg',
+    'https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg',
+    'https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg',
+    'https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg',
+    'https://images.pexels.com/photos/753772/pexels-photo-753772.jpeg',
+    'https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg',
+    'https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg',
+    'https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg',
+    'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg',
+    'https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg',
+    'https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg',
+    'https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg',
+    'https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg',
+    'https://images.pexels.com/photos/158385/pexels-photo-158385.jpeg',
+    'https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg',
+    'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg',
+    'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg'
+
+            // Add more image URLs here
+        ];
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = src;
+            currentImageIndex = images.indexOf(src);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            currentImageIndex += n;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

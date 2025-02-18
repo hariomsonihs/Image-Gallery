@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinit Frame</title>
+    <link rel="icon" type="image/x-icon" href="infinite.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Infinit Frame</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="nature.html">Nature</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="portraits.html">Portraits</a>
+            <a href="abstract.html">Abstract</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidenav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <h1>Explore the Infinit Frame Gallery</h1>
+    <div class="gallery">
+        <!-- Nature Card -->
+        <div class="card" onclick="window.location.href='nature.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" alt="Nature">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Nature</h3>
+            </div>
+        </div>
+
+        <!-- Architecture Card -->
+        <div class="card" onclick="window.location.href='architecture.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Architecture">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Architecture</h3>
+            </div>
+        </div>
+
+        <!-- Portraits Card -->
+        <div class="card" onclick="window.location.href='portraits.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Portraits">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Portraits</h3>
+            </div>
+        </div>
+
+        <!-- Abstract Card -->
+        <div class="card" onclick="window.location.href='abstract.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg" alt="Abstract">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Abstract</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+   <!-- Footer Section -->
+<footer class="footer">
+    <div class="social-links">
+        <a href="https://facebook.com/hariomsonihr" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://instagram.com/hariomsonihs" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://linkedin.com/in/hariomsonihs" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Infinit Frame. Designed and Developed by <a href="https://instagram.com/hariomsonihs/" target="_blank">Hariom Kumar</a></p>
+    </div>
+</footer>
+
+    <script>
+        // JavaScript for Side Navigation
+        function toggleSidenav() {
+            const sidenav = document.getElementById('sidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // JavaScript for Lightbox
+        let currentImageIndex = 0;
+        const images = [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3ZAVqtRgPHFqCSVkYLELMHgOo1xANXpiZw&s.jpeg',
+            'https://silica.co.in/wp-content/uploads/2022/08/Architect-bhopal-4.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUTSj0eO1egcHj_odXiZD7IbwIHqnePRLg&s.jpg',
+            'https://t3.ftcdn.net/jpg/02/22/96/00/360_F_222960005_bVo8WMI5rRTYi4wABTszEnM5YXcAzHZQ.jpg'
+        ];
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = src;
+            currentImageIndex = images.indexOf(src);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            currentImageIndex += n;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Infinit Frame</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="nature.html">Nature</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="portraits.html">Portraits</a>
+            <a href="abstract.html">Abstract</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidenav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+        </ul>
+    </div>
+
+    <h1>Architecture Gallery</h1>
+    <div class="gallery">
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg" alt="Architecture 1">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Modern Skyscraper</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg')">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg" alt="Architecture 2">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Historical Building</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

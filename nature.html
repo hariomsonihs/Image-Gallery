@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Infinit Frame</h2>
+        <div class="nav-links">
+             <a href="index.html">Home</a>
+            <a href="nature.html">Nature</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="portraits.html">Portraits</a>
+            <a href="abstract.html">Abstract</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidenav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <h1>Nature Gallery</h1>
+    <div class="gallery">
+        <div class="card" onclick="window.location.href='forest.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg" alt="Nature 1">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Forest</h3>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='mountains.html'">
+            <div class="card-image">
+                <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-200115-618833.jpg&fm=jpg" alt="Nature 2">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Mountains</h3>
+            </div>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <script>
+        // JavaScript for Side Navigation
+        function toggleSidenav() {
+            const sidenav = document.getElementById('sidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // JavaScript for Lightbox
+        let currentImageIndex = 0;
+        const images = [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3ZAVqtRgPHFqCSVkYLELMHgOo1xANXpiZw&s.jpeg',
+            'https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-200115-618833.jpg&fm=jpg'
+            // Add more image URLs here
+        ];
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = src;
+            currentImageIndex = images.indexOf(src);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            currentImageIndex += n;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>
