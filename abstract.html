@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <h2>Infinit Frame</h2>
         <div class="nav-links">
@@ -32,26 +32,29 @@
         </ul>
     </div>
 
-    <h1>Portraits Gallery</h1>
+    <!-- Gallery Section -->
+    <h1>Abstract Gallery</h1>
     <div class="gallery">
-        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg')">
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg')">
             <div class="card-image">
-                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="Portrait 1">
+                <img src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg" alt="Abstract 1">
             </div>
             <div class="card-content">
-                <h3 class="card-title">Woman in Light</h3>
+                <h3 class="card-title">Colorful Abstract</h3>
             </div>
         </div>
-        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg')">
+        <div class="card" onclick="openLightbox('https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg')">
             <div class="card-image">
-                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Portrait 2">
+                <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg" alt="Abstract 2">
             </div>
             <div class="card-content">
-                <h3 class="card-title">Man in Focus</h3>
+                <h3 class="card-title">Geometric Patterns</h3>
             </div>
         </div>
+        <!-- Add more images as needed -->
     </div>
 
+    <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
         <span class="prev" onclick="changeImage(-1)">&#10094;</span>
@@ -59,6 +62,42 @@
         <img id="lightbox-img" class="lightbox-img">
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript for Side Navigation
+        function toggleSidenav() {
+            const sidenav = document.getElementById('sidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // JavaScript for Lightbox
+        let currentImageIndex = 0;
+        const images = [
+            'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg',
+            'https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg'
+            // Add more image URLs here
+        ];
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = src;
+            currentImageIndex = images.indexOf(src);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            currentImageIndex += n;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+    </script>
 </body>
 </html>
