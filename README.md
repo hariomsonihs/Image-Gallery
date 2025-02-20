@@ -1,4 +1,4 @@
-# Infinite-Frame
+# Infinite-Frame (Image gallery)
 ### Where Moments Become Timeless
 
 Infinite-Frame is not just an image gallery—it’s a platform designed to inspire, organize, and share visual stories. Whether you're a photographer, artist, or someone who loves exploring beautiful imagery, Infinite-Frame offers a seamless experience to discover, download, and enjoy high-quality images for free.
