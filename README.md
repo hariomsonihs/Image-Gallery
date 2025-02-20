@@ -1,4 +1,5 @@
-# Infinite-Frame (Image gallery)
+# Infinite-Frame (Image Gallery)
+
 ### Where Moments Become Timeless
 
 Infinite-Frame is not just an image gallery—it’s a platform designed to inspire, organize, and share visual stories. Whether you're a photographer, artist, or someone who loves exploring beautiful imagery, Infinite-Frame offers a seamless experience to discover, download, and enjoy high-quality images for free.
@@ -35,8 +36,13 @@ Infinite-Frame is not just an image gallery—it’s a platform designed to insp
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript 
 - **Hosting:** Vercel (for frontend)
+
+## GitHub Repository
+[Infinite-Frame GitHub Repository](https://github.com/codealpha_image_gallery)
+
 ---
 
 Enjoy exploring and sharing amazing visuals with **Infinite-Frame**!
 
-   **The Task was provided by codeAlpha during internship**
+## Acknowledgment
+We would like to express our gratitude to **CodeAlpha** for providing this task as part of their internship program.
