@@ -45,4 +45,4 @@ Infinite-Frame is not just an image gallery—it’s a platform designed to insp
 Enjoy exploring and sharing amazing visuals with **Infinite-Frame**!
 
 ## Acknowledgment
-We would like to express our gratitude to **CodeAlpha** for providing this task as part of their internship program.
+I would like to express our gratitude to **CodeAlpha** for providing this task as part of their internship program.
