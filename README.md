@@ -39,3 +39,4 @@ Infinite-Frame is not just an image gallery—it’s a platform designed to insp
 
 Enjoy exploring and sharing amazing visuals with **Infinite-Frame**!
 
+- **The Task was provided by codeAlpha during internship**
