@@ -33,7 +33,7 @@ Infinite-Frame is not just an image gallery—it’s a platform designed to insp
 4. **Use Freely** - All images are free to use for personal or creative projects.
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, React.js (or any framework you’re using)
+- **Frontend:** HTML, CSS, JavaScript 
 - **Hosting:** Vercel (for frontend)
 ---
 
