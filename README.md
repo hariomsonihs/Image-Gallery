@@ -5,7 +5,7 @@
 Infinite-Frame is more than just an image gallery—it's a **creative hub** where **visual stories** come to life! 🌟  
 Whether you're a **photographer, artist, or an enthusiast**, this platform allows you to **discover, download, and enjoy** breathtaking images **for free**.  
 
-🚀 **[Live Demo](#)** | 📂 **[GitHub Repository](https://github.com/codealpha_image_gallery)**  
+🚀 **[Live Demo](https://infinite-frame.vercel.app/index.html)** | 📂 **[GitHub Repository](https://github.com/hariomsonihs/Infinite-Frame)**  
 
 ---
 
